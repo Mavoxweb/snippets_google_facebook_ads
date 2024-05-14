@@ -1,0 +1,51 @@
+<!-- Meus codigos de conversão -->
+<!-- gatilho adicionar ao orçamento -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.getElementsByClassName('yith-ywraq-add-to-quote');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+      gtag_report_conversion();
+    });
+  }
+});
+
+function gtag_report_conversion() {
+  var callback = function () {
+    // Redirecionar o usuário após o evento de conversão ser registrado, se necessário
+    // Substitua a URL abaixo pela URL para a qual deseja redirecionar o usuário
+    
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-850105293/hQJZCIf59o8YEM2nrpUD',
+    'event_callback': callback
+  });
+}
+</script>
+
+<!-- gatilho finalizar orçamento -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.querySelector('.wpcf7-form-control.wpcf7-submit.has-spinner[type="submit"]');
+  if (button) {
+    button.addEventListener('click', function() {
+      gtag_report_conversion();
+    });
+  }
+});
+
+function gtag_report_conversion() {
+  var callback = function () {
+    // Redirecionar o usuário após o evento de conversão ser registrado, se necessário
+    // Substitua a URL abaixo pela URL para a qual deseja redirecionar o usuário
+    
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-850105293/MJzaCPzbx5gZEM2nrpUD',
+    'event_callback': callback
+  });
+}
+
+</script>
